@@ -1,3 +1,71 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+	background: #ecfbfe;
+}
+
+button .relative {
+	position: relative;
+}
+
+button .block {
+	display: block;
+}
+
+button .absolute {
+	position: absolute;
+}
+
+button .h-1 {
+	height: 0.25rem; /* 1pxの高さ */
+}
+
+button .w-full {
+	width: 100%;
+}
+
+button .bg-white {
+	background-color: #fff;
+}
+
+button .transform {
+	transform: translateY(0);
+}
+
+button .rotate-45 {
+	transform: rotate(45deg);
+}
+
+button .-rotate-45 {
+	transform: rotate(-45deg);
+}
+
+button .-translate-y-2 {
+	transform: translateY(-0.5rem); /* -8px */
+}
+
+button .translate-y-2 {
+	transform: translateY(0.5rem); /* 8px */
+}
+
+button .transition-all {
+	transition: all 0.3s ease-in-out;
+}
+
+button .duration-300 {
+	transition-duration: 300ms;
+}
+
+button .ease-in-out {
+	transition-timing-function: ease-in-out;
+}
+
+button .opacity-0 {
+	opacity: 0;
+}
+
+button .z-50 {
+	z-index: 50;
+}
