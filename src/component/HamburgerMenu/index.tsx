@@ -50,13 +50,17 @@ const HamburgerMenu = () => {
 				} transition-transform duration-500 ease-in-out`}
 			>
 				<nav className="mt-8 flex flex-col items-center space-y-4">
-					{navItems.map((item) => (
-						<Link key={item.path} href={item.path}>
-							<a className="text-xl text-white" onClick={toggleMenu}>
-								{item.name}
-							</a>
-						</Link>
-					))}
+					<ul>
+						{navItems.map((item) => (
+							<li
+								key={item.path}
+								className="text-xl text-white"
+								onClick={toggleMenu}
+							>
+								<Link href={item.path}>{item.name}</Link>
+							</li>
+						))}
+					</ul>
 				</nav>
 			</div>
 		</div>
