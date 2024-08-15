@@ -49,7 +49,7 @@ const HamburgerMenu = () => {
 					isOpen ? "translate-x-0" : "translate-x-full"
 				} transition-transform duration-500 ease-in-out`}
 			>
-				<nav className="mt-8 flex flex-col items-center space-y-4">
+				<nav className="mt-8 flex flex-col items-center space-y-10">
 					<ul>
 						{navItems.map((item) => (
 							<li
