@@ -14,7 +14,7 @@ const About = () => {
 					<Image
 						src="/profile-image.jpg"
 						alt="my-image"
-						objectFit="cover"
+						objectFit="contain"
 						width={600}
 						height={600}
 						className="h-[350px] w-[350px] sm:h-[600px] sm:w-[600px]"
