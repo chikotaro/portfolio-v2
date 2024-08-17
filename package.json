@@ -13,6 +13,7 @@
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.52.2",
     "shadcn-ui": "^0.8.0",
     "tailwindcss-filters": "^3.0.0"
   },
