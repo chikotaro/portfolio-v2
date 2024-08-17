@@ -12,7 +12,7 @@ const About = () => {
 			<Layout>
 				<div className="mx-auto w-fit">
 					<Image
-						src="/profile-image.jpg"
+						src="/Profile-Image.jpg"
 						alt="my-image"
 						objectFit="contain"
 						width={600}
