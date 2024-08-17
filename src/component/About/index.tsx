@@ -5,11 +5,11 @@ import { Title } from "src/component/Title";
 export const About = () => {
 	return (
 		<div className="mx-auto sm:max-w-[600px]">
-			<Title title="自己紹介" subTitle="About" />
+			<Title title="制作者について" subTitle="About" />
 			<div className="mt-6 font-serif flex flex-col gap-2 sm:text-2xl">
-				<p>思いが形になる素晴らしさを体験してください。</p>
+				<p>あなたの思いがHPの形になる素晴らしさを体験してください。</p>
 				<p>
-					また、そのモノが使う人の心に響くすばらしいモノであることを想像してください。
+					また、そのサイトが使う人の心に響くすばらしいモノであることを想像してください。
 				</p>
 				<p>そういったものを一緒につくりたい。</p>
 			</div>
