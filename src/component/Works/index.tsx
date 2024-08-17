@@ -6,16 +6,16 @@ import { Title } from "src/component/Title";
 
 const workList = [
 	{
-		title: "oha",
+		title: "OHA!",
 		desc: "html,css,Javascript で作ったポートフォリオサイト",
 		href: "https://oha-portfolio-sho.vercel.app/",
-		thumbnail: "OHA.png",
+		thumbnail: "/OHA.png",
 	},
 	{
 		title: "simple",
 		desc: "microCMS,Next.js,Typescriptで作ったポートフォリオサイト",
 		href: "/my-next-project-q726eg5ph-shos-projects-c687e542.vercel.app",
-		thumbnail: "simple.png",
+		thumbnail: "/simple.png",
 	},
 ];
 
@@ -24,12 +24,12 @@ export const Works = () => {
 		<div className="mx-auto sm:max-w-[600px]">
 			<Title title="制作実績" subTitle="Works" />
 			<div className="mt-6 sm:text-2xl">
-				<p className="font-bold">-これまで作ってきた実績の紹介-</p>
+				<p className="font-bold">-これまでの実績の紹介-</p>
 				<div className="flex flex-col gap-2 leading-8 sm:leading-[40px]">
 					<p className="mt-2">
-						html cssで静的なHPやLPを作成し
+						html,cssで静的なHPやLPを作成し
 						<br />
-						javascriptを使い動きをつけます。
+						Javascriptを使い動きをつけます。
 					</p>
 					<p>
 						また、WordPressでHPを作成したり、
@@ -41,6 +41,10 @@ export const Works = () => {
 					<p>
 						MicroCMSでは、Reactのフレームワークである、Next.jsを使用し、Vercelを用いてデプロイを行います。
 					</p>
+					<p>
+						今回のポートフォリオサイトは、Next.jsとTypescriptでつくりました。高速なページ遷移を感じられると思います。
+						cssでは、Tailwindcssを用いて、シンプルでありながら、素早くコーディングできるようにしています。
+					</p>
 				</div>
 				<div className="mt-8">
 					<p className="font-bold">- 実績紹介例 -</p>
@@ -50,13 +54,13 @@ export const Works = () => {
 								key={work.href}
 								className="rounded-md bg-slate-300 py-2 px-4 "
 							>
-								<Link href={work.href} target="_blank">
+								<Link href={work.href} passHref target="_blank">
 									<div className="flex flex-col gap-3">
 										<div className="text-3xl font-bold">{work.title}</div>
 										<div>{work.desc}</div>
-										<div className="w-[300px] mx-auto pb-4">
+										<div className="mx-auto w-[300px] pb-4">
 											<Image
-												src={`/${work.thumbnail}`}
+												src={work.thumbnail}
 												alt=""
 												width={300}
 												height={300}
@@ -69,9 +73,9 @@ export const Works = () => {
 						))}
 					</ul>
 				</div>
-				<div className="mt-4">
-					<ButtonLink name="制作実績一覧" href="/works" />
-				</div>
+			</div>
+			<div className="mt-4">
+				<ButtonLink name="もっと見る" href="/works" />
 			</div>
 		</div>
 	);
