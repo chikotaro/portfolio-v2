@@ -5,5 +5,5 @@ type Props = {
 };
 
 export const Sheet: FC<Props> = ({ children }: Props) => (
-	<div className="mx-auto mt-4 w-full sm:max-w-[600px]">{children}</div>
+	<div className="mx-auto mt-4 w-full sm:max-w-[740px]">{children}</div>
 );

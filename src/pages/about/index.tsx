@@ -10,7 +10,7 @@ const About = () => {
 			<Header />
 			<Hero title="制作者について" subTitle="About" />
 			<Layout>
-				<div>
+				<div className="w-fit mx-auto">
 					<Image
 						src="/my-image.png"
 						alt="my-image"
@@ -33,7 +33,7 @@ const About = () => {
 						</p>
 					</div>
 					<div
-						className="relative mt-16 h-[350px] w-[350px] bg-cover bg-center backdrop-blur-lg sm:h-[600px] sm:w-[600px]"
+						className="relative mt-16 h-[350px] mx-auto w-[350px] bg-cover bg-center backdrop-blur-lg sm:h-[600px] sm:w-[600px]"
 						style={{ backgroundImage: `url('/sakura.png')` }}
 					>
 						<div className="absolute inset-0 bg-black opacity-50"></div>{" "}
@@ -48,7 +48,7 @@ const About = () => {
 						</div>
 					</div>
 					<div
-						className="relative mt-4 h-[350px] w-[350px] bg-cover bg-center backdrop-blur-lg sm:h-[600px] sm:w-[600px]"
+						className="relative mt-4 h-[350px] w-[350px] mx-auto bg-cover bg-center backdrop-blur-lg sm:h-[600px] sm:w-[600px]"
 						style={{ backgroundImage: `url('/coffee-programing.png')` }}
 					>
 						<div className="absolute inset-0 bg-black opacity-60"></div>{" "}
