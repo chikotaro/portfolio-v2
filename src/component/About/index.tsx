@@ -4,7 +4,7 @@ import { Title } from "src/component/Title";
 
 export const About = () => {
 	return (
-		<div className="mx-auto sm:max-w-[600px]">
+		<div className="mx-auto sm:max-w-[800px]">
 			<Title title="制作者について" subTitle="About" />
 			<div className="mt-6 font-serif flex flex-col gap-2 sm:text-2xl">
 				<p>あなたの思いがHPの形になる素晴らしさを体験してください。</p>

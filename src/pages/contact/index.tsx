@@ -23,7 +23,9 @@ const Contact = () => {
 	return (
 		<div>
 			<Header />
-			<Hero title="お問い合わせ" subTitle="Contact" />
+			<div className="mt-[56px] sm:mt-[88px]">
+				<Hero title="お問い合わせ" subTitle="Contact" />
+			</div>
 			<Layout>
 				<h1 className="text-xl font-bold">お問い合わせフォーム</h1>
 

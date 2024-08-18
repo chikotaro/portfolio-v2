@@ -8,7 +8,9 @@ const About = () => {
 	return (
 		<div>
 			<Header />
-			<Hero title="制作者について" subTitle="About" />
+			<div className="mt-[56px] sm:mt-[88px]">
+				<Hero title="制作者について" subTitle="About" />
+			</div>
 			<Layout>
 				<div className="mx-auto w-fit">
 					<Image
@@ -17,7 +19,7 @@ const About = () => {
 						objectFit="contain"
 						width={600}
 						height={600}
-						className="h-[350px] w-[350px] sm:h-[600px] sm:w-[600px]"
+						className="h-[350px] w-[350px] sm:h-[600px] sm:w-[800px]"
 					/>
 				</div>
 				<div className="mt-4">
@@ -34,7 +36,7 @@ const About = () => {
 						</p>
 					</div>
 					<div
-						className="relative mx-auto mt-16 h-[350px] w-[350px] bg-cover bg-center backdrop-blur-lg sm:h-[600px] sm:w-[600px]"
+						className="relative mx-auto mt-16 h-[350px] w-[350px] bg-cover bg-center backdrop-blur-lg sm:h-[800px] sm:w-[800px]"
 						style={{ backgroundImage: `url('/sakura.png')` }}
 					>
 						<div className="absolute inset-0 bg-black opacity-50"></div>{" "}
@@ -49,7 +51,7 @@ const About = () => {
 						</div>
 					</div>
 					<div
-						className="relative mx-auto mt-4 h-[350px] w-[350px] bg-cover bg-center backdrop-blur-lg sm:h-[600px] sm:w-[600px]"
+						className="relative mx-auto mt-4 h-[350px] w-[350px] bg-cover bg-center backdrop-blur-lg sm:h-[800px] sm:w-[800px]"
 						style={{ backgroundImage: `url('/coffee-programing.png')` }}
 					>
 						<div className="absolute inset-0 bg-black opacity-60"></div>{" "}
@@ -96,7 +98,7 @@ const About = () => {
 									コロナの緊急事態宣言後、1ヶ月間の自宅待機時に色々なことに挑戦したい思い、福岡に移住しました。
 									福岡に移住してからは、コーヒーの焙煎を始め、コーヒーの美味しさを追求し、焙煎の技術を磨いています。
 									就職した先が建築業、美容業、飲食業を行っている会社でした。飲食では、パンの製造をしました。
-									その際に、自家焙煎したコーヒー前を実際に店頭でドリンク提供させていただきました。
+									その際に、自家焙煎したコーヒー豆を実際に店頭でドリンク提供させていただきました。
 									建築業では、新築戸建の検査をメインに行いました。
 									そんな中、業務をしている時にもっと効率のよい方法であったり、繰り返し業務の自動化を考えるようになり、プログラミングを学び始めました。
 									仕事の休憩時間を利用して、ノーコードで在庫管理アプリを作りました。

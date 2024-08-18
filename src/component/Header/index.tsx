@@ -18,7 +18,7 @@ const menuList = [
 
 export const Header = () => {
 	return (
-		<div className="flex items-center justify-between gap-5 sm:px-4 sm:py-5">
+		<div className="fixed top-0 left-0 z-50 flex w-full items-center justify-between gap-5 bg-slate-50 shadow-md sm:px-4 sm:py-5">
 			<Link href="/" className=" text-2xl font-bold sm:text-5xl">
 				Y.sPortfolio
 			</Link>

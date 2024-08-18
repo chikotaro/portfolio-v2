@@ -7,19 +7,21 @@ import { Works } from "src/component/Works";
 
 const Home: NextPage = () => {
 	return (
-		<div>
+		<div className="mt-10">
 			<Header />
-			<Layout>
-				<div className="w-full">
-					<MV />
-					<div className="mx-auto mt-4 sm:max-w-[800px]">
-						<About />
+			<div>
+				<Layout>
+					<div className="w-full">
+						<MV />
+						<div className="mx-auto mt-4 sm:max-w-[800px]">
+							<About />
+						</div>
+						<div className="mx-auto mt-20 sm:max-w-[800px]">
+							<Works />
+						</div>
 					</div>
-					<div className="mx-auto mt-20 sm:max-w-[800px]">
-						<Works />
-					</div>
-				</div>
-			</Layout>
+				</Layout>
+			</div>
 		</div>
 	);
 };

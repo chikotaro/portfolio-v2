@@ -13,7 +13,7 @@ const workListA = [
 		thumbnail: "/OHA.png",
 	},
 	{
-		title: "AI",
+		title: "AI (開発途中)",
 		desc: "html,css,Javascript で作ったポートフォリオサイト",
 		href: "https://ai-portfolio-sho.vercel.app/",
 		thumbnail: "/AI.png",
@@ -28,7 +28,7 @@ const workListB = [
 		thumbnail: "/simple.png",
 	},
 	{
-		title: "web-blog",
+		title: "web-blog (開発途中)",
 		desc: "microCMS,Next.js,Typescriptで作ったポートフォリオサイト",
 		href: "https://pf-web-blog.vercel.app/",
 		thumbnail: "/web-blog.png",
@@ -39,11 +39,16 @@ const Works = () => {
 	return (
 		<div>
 			<Header />
-			<Hero title="実績紹介" subTitle="Works" />
+			<div className="mt-[56px] sm:mt-[88px]">
+				<Hero title="実績紹介" subTitle="Works" />
+			</div>
+
 			<Layout>
 				<p>これまで作成した制作物の一覧をご紹介します。</p>
 				<div className="mt-20">
-					<p className="text-xl sm:text-3xl">HTML,CSS,JavaScriptを使用した制作物</p>
+					<p className="text-xl sm:text-3xl">
+						HTML,CSS,JavaScriptを使用した制作物
+					</p>
 					<ul className="mt-5 flex flex-col gap-5 sm:grid sm:grid-cols-2">
 						{workListA.map((work) => (
 							<li key={work.href}>
