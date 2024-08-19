@@ -21,10 +21,14 @@ const workList = [
 
 export const Works = () => {
 	return (
-		<div className="mx-auto sm:max-w-[600px]">
+		<div className="mx-auto sm:max-w-[800px]">
 			<Title title="制作実績" subTitle="Works" />
 			<div className="mt-6 sm:text-2xl">
-				<p className="font-bold">-これまでの実績の紹介-</p>
+				<p>
+					今回のポートフォリオサイトはレスポンシブに対応しており、使用技術はReactのFWのNext.jsとTypescriptでつくりました。高速なページ遷移を感じられると思います。
+					cssでは、Tailwindcssを用いて、シンプルでありながら、素早くコーディングできるようにしています。
+				</p>
+				<p className="mt-8 font-bold">-これまでの実績の紹介-</p>
 				<div className="flex flex-col gap-2 leading-8 sm:leading-[40px]">
 					<p className="mt-2">
 						html,cssで静的なHPやLPを作成し
@@ -40,10 +44,6 @@ export const Works = () => {
 					</p>
 					<p>
 						MicroCMSでは、Reactのフレームワークである、Next.jsを使用し、Vercelを用いてデプロイを行います。
-					</p>
-					<p>
-						今回のポートフォリオサイトは、Next.jsとTypescriptでつくりました。高速なページ遷移を感じられると思います。
-						cssでは、Tailwindcssを用いて、シンプルでありながら、素早くコーディングできるようにしています。
 					</p>
 				</div>
 				<div className="mt-8">
@@ -75,7 +75,7 @@ export const Works = () => {
 				</div>
 			</div>
 			<div className="mt-4">
-				<ButtonLink name="もっと見る" href="/works" />
+				<ButtonLink name="read more" href="/works" />
 			</div>
 		</div>
 	);

@@ -49,12 +49,12 @@ const HamburgerMenu = () => {
 					isOpen ? "translate-x-0" : "translate-x-full"
 				} transition-transform duration-500 ease-in-out`}
 			>
-				<nav className="mt-8 flex flex-col items-center space-y-10">
-					<ul>
+				<nav className="mt-20 ">
+					<ul className="flex flex-col items-center space-y-[30px]">
 						{navItems.map((item) => (
 							<li
 								key={item.path}
-								className="text-xl text-white"
+								className="text-2xl text-white"
 								onClick={toggleMenu}
 							>
 								<Link href={item.path}>{item.name}</Link>
