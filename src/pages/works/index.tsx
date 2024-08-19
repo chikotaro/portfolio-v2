@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Footer } from "src/component/Footer";
 import { Header } from "src/component/Header";
 import { Layout } from "src/component/Layout";
 import { Hero } from "src/Hero";
@@ -28,8 +29,8 @@ const workListB = [
 		thumbnail: "/simple.png",
 	},
 	{
-		title: "web-blog (開発途中)",
-		desc: "microCMS,Next.js,Typescriptで作ったポートフォリオサイト",
+		title: "web-blog(開発途中)",
+		desc: "microCMS,Next.js,Typescriptで作ったポートフォリオブログサイト",
 		href: "https://pf-web-blog.vercel.app/",
 		thumbnail: "/web-blog.png",
 	},
@@ -58,8 +59,6 @@ const Works = () => {
 									target="_blank"
 									className="flex transform flex-col gap-2 rounded-md border-2 p-5 transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg sm:gap-4"
 								>
-									<div className="text-4xl font-bold">{work.title}</div>
-									<div>{work.desc}</div>
 									<div className="mx-auto w-[300px] pb-4">
 										<Image
 											src={work.thumbnail}
@@ -68,6 +67,8 @@ const Works = () => {
 											height={300}
 										/>
 									</div>
+									<div className="text-4xl font-bold">{work.title}</div>
+									<div>{work.desc}</div>
 								</Link>
 							</li>
 						))}
@@ -85,8 +86,6 @@ const Works = () => {
 									target="_blank"
 									className="flex transform flex-col gap-2 rounded-md border-2 p-5 transition-transform duration-300 hover:-translate-y-2 hover:shadow-lg sm:gap-4"
 								>
-									<div className="text-4xl font-bold">{work.title}</div>
-									<div>{work.desc}</div>
 									<div className="mx-auto w-[300px] pb-4">
 										<Image
 											src={work.thumbnail}
@@ -95,6 +94,8 @@ const Works = () => {
 											height={300}
 										/>
 									</div>
+									<div className="text-4xl font-bold">{work.title}</div>
+									<div>{work.desc}</div>
 								</Link>
 							</li>
 						))}
@@ -103,6 +104,7 @@ const Works = () => {
 
 				{/* 他のコンテンツ */}
 			</Layout>
+			<Footer />
 		</div>
 	);
 };

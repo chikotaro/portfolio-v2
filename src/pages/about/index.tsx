@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ButtonLink } from "src/component/ButtonLink";
+import { Footer } from "src/component/Footer";
 import { Header } from "src/component/Header";
 import { Layout } from "src/component/Layout";
 import { Hero } from "src/Hero";
@@ -14,20 +15,18 @@ const About = () => {
 			<Layout>
 				<div className="mx-auto w-fit">
 					<Image
-						src="/Profile-Image.jpg"
+						src="/profile-img.png"
 						alt="my-image"
 						objectFit="contain"
 						width={600}
 						height={600}
-						className="h-[350px] w-[350px] sm:h-[600px] sm:w-[800px]"
+						className="h-[350px] w-[350px] sm:h-[800px] sm:w-[800px]"
 					/>
 				</div>
 				<div className="mt-4">
 					<div className="flex flex-col gap-3 sm:text-2xl">
-						<p>思いが形になる素晴らしさを体験してください。</p>
-						<p>
-							また、そのモノが使う人の心に響くすばらしいモノであることを想像してください。
-						</p>
+						<p>あなたの思いがHPの形になる。</p>
+						<p>また、そのサイトが使う人の心に響くすばらしいモノになる。</p>
 						<p>そういったものを一緒につくりたい。</p>
 						<p>
 							そうは言っても、私が誰であるかを知る必要があります。
@@ -39,7 +38,7 @@ const About = () => {
 						className="relative mx-auto mt-16 h-[350px] w-[350px] bg-cover bg-center backdrop-blur-lg sm:h-[800px] sm:w-[800px]"
 						style={{ backgroundImage: `url('/sakura.png')` }}
 					>
-						<div className="absolute inset-0 bg-black opacity-50"></div>{" "}
+						<div className="absolute inset-0 bg-black opacity-60"></div>{" "}
 						{/* 透明な黒いオーバーレイ */}
 						<div className="relative z-10 mx-auto p-10 text-xl font-bold leading-10 text-white sm:p-20 sm:text-4xl sm:leading-loose">
 							<h2 className="text-center text-3xl font-bold sm:text-5xl">
@@ -55,16 +54,26 @@ const About = () => {
 						style={{ backgroundImage: `url('/coffee-programing.png')` }}
 					>
 						<div className="absolute inset-0 bg-black opacity-60"></div>{" "}
-						<div className="relative z-10 mx-auto p-10 text-xl font-bold leading-10 text-white sm:p-20 sm:text-4xl sm:leading-loose">
-							<p>趣味：珈琲、サッカー、プログラミング</p>
-							<p>職業：エンジニア</p>
+						<div className="sm:pt-30 relative z-10 mx-auto flex flex-col gap-5 p-2 pt-8 text-lg font-bold leading-10 text-white sm:p-12 sm:text-4xl sm:leading-loose">
+							<div className="flex">
+								<p className="block whitespace-nowrap">趣味：</p>
+								<p>珈琲、サッカー、プログラミング</p>
+							</div>
+							<div className="flex">
+								<p className="block whitespace-nowrap">職業：</p>
+								<p>パン屋、建築業</p>
+							</div>
+							<div className="flex">
+								<p className="block whitespace-nowrap">やりたいこと : </p>
+								<p>ツーリング、キャンプ、釣り、DIY</p>
+							</div>
 						</div>
 					</div>
 
 					<div className="leading-8 sm:leading-10">
-						<div className="mt-[280px] rounded-xl border-2 p-4 sm:text-2xl">
+						<div className="mt-[150px] rounded-xl border-2 p-4 sm:mt-[280px] sm:text-2xl">
 							<h3 className="text-2xl font-bold sm:text-3xl">初めての海外</h3>
-							<p className="mt-4">
+							<p className="mt-4 sm:leading-10">
 								高校卒業後にスペインへ留学しに行きました。
 								<br />
 								はじめの1年はホームステイであのサグラダファミリアが徒歩5分以内の好立地なところでした。
@@ -82,7 +91,7 @@ const About = () => {
 								<h3 className="text-2xl font-bold sm:text-3xl">
 									帰国後は東京で
 								</h3>
-								<p className="mt-4">
+								<p className="mt-4 sm:leading-10">
 									2020年東京オリンピックが開催される予定であったので、ボランティアをしたいと思い、スペイン在住時に応募をしていました。
 									しかし、応募数が多く、エラーが出たらしく、スペインからではうまく登録ができず、ただ帰国するということになってしまいました。
 									しかし、帰国後は東京のスペシャルティコーヒー専門店でバリスタとして知識や技術を磨き、個人ではコーヒーの焙煎を始めるようになりました。
@@ -94,7 +103,7 @@ const About = () => {
 							<div className="absolute left-1/2 -top-[140px] h-[220px] w-[2px] -translate-x-1/2 -translate-y-[50%] transform bg-gray-300"></div>
 							<div className="mt-[280px] rounded-xl border-2 p-4 sm:text-2xl">
 								<h3 className="text-2xl font-bold sm:text-3xl">福岡へ移住</h3>
-								<p className="mt-4">
+								<p className="mt-4 sm:leading-10">
 									コロナの緊急事態宣言後、1ヶ月間の自宅待機時に色々なことに挑戦したい思い、福岡に移住しました。
 									福岡に移住してからは、コーヒーの焙煎を始め、コーヒーの美味しさを追求し、焙煎の技術を磨いています。
 									就職した先が建築業、美容業、飲食業を行っている会社でした。飲食では、パンの製造をしました。
@@ -112,7 +121,7 @@ const About = () => {
 								<h3 className="text-2xl font-bold sm:text-3xl">
 									プログラミング
 								</h3>
-								<p className="mt-4">
+								<p className="mt-4 sm:leading-10">
 									効率化を考えるようになり、プログラミングを学び始めましたが、自分で何かを作ることが好きであったこともあり、web制作を学びました。
 									そこからweb制作だけでなく、効率化をするシステム開発の勉強をしています。
 									web開発では、WordPressを用いたCMSでHP作成を行います。
@@ -127,6 +136,7 @@ const About = () => {
 					</div>
 				</div>
 			</Layout>
+			<Footer />
 		</div>
 	);
 };
