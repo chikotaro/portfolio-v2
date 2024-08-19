@@ -1,5 +1,7 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 import { About } from "src/component/About";
+import { Footer } from "src/component/Footer";
 import { Header } from "src/component/Header";
 import { Layout } from "src/component/Layout";
 import { MV } from "src/component/MV";
@@ -16,12 +18,13 @@ const Home: NextPage = () => {
 						<div className="mx-auto mt-4 sm:max-w-[800px]">
 							<About />
 						</div>
-						<div className="mx-auto mt-20 sm:max-w-[800px]">
+						<div className="mx-auto mt-[150px] sm:max-w-[800px]">
 							<Works />
 						</div>
 					</div>
 				</Layout>
 			</div>
+			<Footer />
 		</div>
 	);
 };

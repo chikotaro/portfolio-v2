@@ -3,6 +3,7 @@ import { Header } from "src/component/Header";
 import { Layout } from "src/component/Layout";
 import { Hero } from "src/Hero";
 import { useForm, SubmitHandler } from "react-hook-form";
+import { Footer } from "src/component/Footer";
 
 interface IFormInput {
 	name: string;
@@ -91,6 +92,7 @@ const Contact = () => {
 
 				{/* 他のコンテンツ */}
 			</Layout>
+			<Footer />
 		</div>
 	);
 };
